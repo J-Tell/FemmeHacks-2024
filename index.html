@@ -6,28 +6,42 @@
     <title>Document</title>
 
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/mini.css/3.0.1/mini-default.min.css">
+    <link rel="stylesheet" href="index.css">
     <link rel="stylesheet" href="navbar.css">
 </head>
 
 <body>
-    <header>
-        <div class = "right_align">
-            <a href="../index.html" class="button">Home</a>
-            <a href="lofi.html" class="button">Lofi</a>
-            <a href="pomodoro.html" class="button">Pomodoro</a>
-            <a href="breathe.html" class="button">Breathe</a>
-            <div class="dropdown">
-                <button class="dropbtn">Dropdown
-                  <i class="fa fa-caret-down"></i>
-                </button>
-                <div class="dropdown-content">
-                  <a href="#">Link 1</a>
-                  <a href="#">Link 2</a>
-                  <a href="#">Link 3</a>
-                </div>
-              </div>
+<header>
+    <div class = "right_align">
+        <a href="../index.html" class="button">Home</a>
+        <div class="study-dropdown">
+            <button class="button" id="dropbtn">Study</button>
+            <div class="study-content">
+                <a href="#">Lofi</a>
+                <a href="#">Timer</a>
+            </div>
         </div>
-    </header>
-    
+
+
+        <div class="calm-dropdown">
+            <button class="button" id="dropbtn">Calm</button>
+            <div class="calm-content">
+                <a href="#">Bubble</a>
+                <a href="#">Quotes</a>
+            </div>
+        </div>
+
+
+        <div class="fun-dropdown">
+            <button class="button" id="dropbtn">Fun</button>
+            <div class="fun-content">
+                <a href="#">Quiz</a>
+                <a href="#">Photos</a>
+            </div>
+        </div>
+
+</div>
+</header>
+
 </body>
 </html>

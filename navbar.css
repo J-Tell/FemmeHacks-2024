@@ -1,28 +1,30 @@
 :root {
-    --header-back-color: #C1D3FE;
-    --header-hover-back-color: #C1D3FE;
+    --header-back-color: #c5d4f9;
+    --header-hover-back-color: #c5d4f9;
     --header-border-color: #8c8a8d;
     --header-fore-color: #000000;
 }
- 
-a, .dropdown {
-    font-weight: bold;
+
+
+.button {
+    font-size: 20px;
 }
 
 .right_align {
+    font-size: 20px;
     position: absolute;
     right: 0;
     padding-right: 15px;
 }
 
-.dropdown {
+.calm-dropdown, .study-dropdown, .fun-dropdown {
     float: left;
     overflow: hidden;
-  }
-  
+}
 
-  .dropdown .dropbtn {
-    font-size: 16px;
+
+.calm-dropdown .dropbtn, .study-dropdown .dropbtn, .fun-dropdown .dropbtn{
+    font-size: 30px;
     border: none;
     outline: none;
     color: black;
@@ -30,39 +32,34 @@ a, .dropdown {
     background-color: inherit;
     font-family: inherit;
     margin: 0;
-  }
-  
+}
 
-  .navbar a:hover, .dropdown:hover .dropbtn, .button {
-    background-color: #b0bedf;
-  }
-  
-  /* Dropdown content (hidden by default) */
-  .dropdown-content {
+
+.calm-content, .study-content, .fun-content {
     display: none;
     position: absolute;
     background-color: #f9f9f9;
     min-width: 160px;
     box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
     z-index: 1;
-  }
-  
-  /* Links inside the dropdown */
-  .dropdown-content a {
+}
+
+
+.calm-content a, .study-content a, .fun-content a {
     float: none;
     color: black;
     padding: 12px 16px;
     text-decoration: none;
     display: block;
     text-align: left;
-  }
-  
-  /* Add a grey background color to dropdown links on hover */
-  .dropdown-content a:hover {
+}
+
+
+.calm-content a:hover, .study-content a:hover, .fun-content a:hover {
     background-color: #ddd;
-  }
-  
-  /* Show the dropdown menu on hover */
-  .dropdown:hover .dropdown-content {
+}
+
+
+.calm-dropdown:hover .calm-content, .study-dropdown:hover .study-content, .fun-dropdown:hover .fun-content {
     display: block;
-  }
+}
