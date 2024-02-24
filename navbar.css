@@ -1,17 +1,25 @@
+body {
+    background: rgb(229, 235, 249);
+}
+
 :root {
-    --header-back-color: #c5d4f9;
-    --header-hover-back-color: #c5d4f9;
+    --header-back-color: #d4ddf6;
+    --header-hover-back-color: #d4ddf6;
     --header-border-color: #8c8a8d;
     --header-fore-color: #000000;
 }
 
+header {
+    height: 56px;
+}
 
 .button {
     font-size: 20px;
 }
 
 .right_align {
-    font-size: 20px;
+    height: 50px !important;
+    font-size: 20px !important;
     position: absolute;
     right: 0;
     padding-right: 15px;
@@ -26,7 +34,7 @@
 
 
 .calm-dropdown .dropbtn, .study-dropdown .dropbtn, .fun-dropdown .dropbtn{
-    font-size: 30px;
+    font-size: 30px !important;
     border: none;
     outline: none;
     color: black;
@@ -40,7 +48,7 @@
 .calm-content, .study-content, .fun-content {
     display: none;
     position: absolute;
-    background-color: #c5d4f9;
+    background-color: #d4ddf6;
     min-width: 160px;
     box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
     z-index: 1;
