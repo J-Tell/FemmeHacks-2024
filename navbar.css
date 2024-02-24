@@ -17,6 +17,8 @@
     padding-right: 15px;
 }
 
+
+/* Dropdown menus */
 .calm-dropdown, .study-dropdown, .fun-dropdown {
     float: left;
     overflow: hidden;
@@ -38,7 +40,7 @@
 .calm-content, .study-content, .fun-content {
     display: none;
     position: absolute;
-    background-color: #f9f9f9;
+    background-color: #c5d4f9;
     min-width: 160px;
     box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
     z-index: 1;
@@ -56,7 +58,7 @@
 
 
 .calm-content a:hover, .study-content a:hover, .fun-content a:hover {
-    background-color: #ddd;
+    background-color: #bac8ee;
 }
 
 
