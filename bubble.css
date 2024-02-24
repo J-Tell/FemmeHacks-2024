@@ -1,3 +1,7 @@
+html {
+    background: rgb(229, 235, 249);
+}
+
 body {
     min-height: 100vh;
     overflow: hidden;
@@ -14,6 +18,8 @@ body {
     height: 300px;
     width: 280px;
     margin: auto;
+    margin-top: 120px;
+    margin-bottom: 40px;
     position: relative;
     transform: scale(1);
 }
@@ -37,7 +43,9 @@ body {
 }
 
 .circle {
-    background-color: #3e82c2;
+    background: linear-gradient(#d4ddf6 1%, #7089cc 99%);
+    -webkit-box-shadow: 0px 0px 20px 15px #d4ddf6; 
+    box-shadow: 0px 0px 20px 15px #d4ddf6;
     height: 100%;
     width: 100%;
     position: absolute;
@@ -45,6 +53,24 @@ body {
     left: 0;
     z-index: -1;
     border-radius: 50%;
+}
+
+#text {
+    color: #d2dffd;
+    font-weight: bold;
+    font-size: 1.5em;
+}
+
+.actionbtn {
+    display: grid;
+    justify-content: center;
+    /* grid-template-columns: 100px 100px; */
+}
+
+#start {
+    border-radius: 15px;
+    width: 150px;
+    background-color: #d4ddf6;
 }
 
 /* .pointer-container {
