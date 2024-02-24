@@ -47,13 +47,13 @@ body {
     border-radius: 50%;
 }
 
-.pointer-container {
+/* .pointer-container {
     position: absolute;
     top: -40px;
     left: 140px;
     width: 20px;
     height: 190px;
-    animation: rotate 7.5s linear forwards infinite;
+    animation: rotate 7.5s linear forwards;
     transform-origin: bottom center;
 }
 
@@ -63,23 +63,16 @@ body {
     height: 20px;
     width: 20px;
     display: block;
-}
+} */
 
 .container.grow {
-    animation: grow 3s linear forwards;
+    animation: grow 3.5s linear forwards;
 }
 
 .container.shrink {
-    animation: shrink 3s linear forwards;
+    animation: shrink 3.5s linear forwards;
 }
 
-/* .container.stop {
-    animation: stop infinite linear forwards;
-    /* animation: stop 7.5s linear forwards infinite; */
-
-.paused {
-    animation-play-state: paused;
-}
 
 @keyframes rotate {
     from {
@@ -95,13 +88,13 @@ body {
         transform: scale(1);
     }
     to {
-        transform: scale(1.5);
+        transform: scale(1.2);
     }
 }
 
 @keyframes shrink {
     from {
-        transform: scale(1.5);
+        transform: scale(1.2);
     }
     to {
         transform: scale(1);
