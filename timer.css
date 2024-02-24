@@ -1,0 +1,39 @@
+body {
+    background:rgb(218, 228, 250);
+}
+
+.timer {
+    margin-top: 80px;
+    font-size: 100px;
+}
+
+button {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 20px;
+    width: 100%;
+    border-radius: 50px;
+}
+
+textarea {
+    margin-left: 100px !important;
+    height: 500px;
+    width: 300px;
+    background-color: rgb(230, 235, 252);
+    border-color: #C1D3FE;
+}
+
+.container {
+    justify-content: center;
+    display: grid;
+    grid-template-rows: auto;
+    grid-template-columns: 200px 250px;
+}
+
+p {
+    margin-left: 100px;
+    margin-top: 30px;
+    text-align: center;
+    font-weight: bold;
+}

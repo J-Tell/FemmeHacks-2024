@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lofi Music</title>
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/mini.css/3.0.1/mini-default.min.css">
+    <link rel="stylesheet" href="lofi.css">
+    <link rel="stylesheet" href="index.css">
+    <link rel="stylesheet" href="navbar.css">
+</head>
+<body>
+    <header>
+        <div class = "right_align">
+            <a href="../index.html" class="button">Home</a>
+            <a href="../mission.html" class="button">Mission</a>
+            <div class="study-dropdown">
+                <button class="button" id="dropbtn">Study</button>
+                <div class="study-content">
+                    <a href="lofi.html">Lofi</a>
+                    <a href="timer.html">Timer</a>
+                </div>
+            </div>
+
+            <div class="calm-dropdown">
+                <button class="button" id="dropbtn">Calm</button>
+                <div class="calm-content">
+                    <a href="bubble.html">Bubble</a>
+                    <a href="quotes.html">Quotes</a>
+                </div>
+            </div>
+
+            <div class="fun-dropdown">
+                <button class="button" id="dropbtn">Fun</button>
+                <div class="fun-content">
+                    <a href="quiz.html">Quiz</a>
+                    <a href="photo.html">Photos</a>
+                </div>
+            </div>
+    </div>
+    </header>
+
+
+    
+    <button onclick="change_text()" id="myButton" class="swapbutton">Choose a picture!</button>
+    <img id="myImg" src="lofi-images/lofi-cafe.jpg" class="center">
+    <p id="myTitle">Now Playing: Aurora </p>
+    <audio id="mySong" controls autoplay loop class="musicbar">
+        <source src="lofi-music/lofi-cafe-aurora.mp3" type="audio/mpeg">
+    </audio>
+    
+    <script>
+        const images = [
+            'lofi-rain.jpg',
+            'lofi-videogame.jpg',
+            'lofi-cafe.jpg'
+        ];
+        const music = [
+            'lofi-rain-wondering.mp3',
+            'lofi-videogame-floating.mp3',
+            'lofi-cafe-aurora.mp3'
+        ]
+        const songTitles = [
+            'Now Playing: Wondering',
+            'Now Playing: Floating',
+            'Now Playing: Aurora'
+        ]
+        const bouton = document.getElementById('myButton');
+        const image = document.getElementById('myImg');
+        const song = document.getElementById('mySong');
+        //const title = document.getElementById('myTitle');
+        let index = 0; 
+
+        function change_text()
+        {
+            if (index == 0) {
+                document.getElementById("myTitle").innerHTML = "Now Playing: Wondering";
+            }
+            else if (index == 1) {
+                document.getElementById("myTitle").innerHTML = "Now Playing: Floating";
+            }
+            else if (index == 2) {
+                document.getElementById("myTitle").innerHTML = "Now Playing: Aurora";
+            }
+        }
+
+        bouton.addEventListener('click', () => {
+            image.src='lofi-images/' + images[index];
+            //title.src = title[index];
+            song.src='lofi-music/' + music[index];
+            //bouton.textContent = title[index];
+            index++;
+
+            if (index >= images.length && index >= music.length) {
+                index = 0;
+            }
+        });
+
+    </script>
+</body>
+</html>
