@@ -1,14 +1,14 @@
-const colors = ["purple", "pink", "blue"];
+const colors = ["purple", "pink", "blue", "green"];
 var current_color = 0;
 
 function getPreviousContent() {
-    previous_color = ((current_color - 1) % 3);
-    if (previous_color == -1) { previous_color = 2; }
+    previous_color = ((current_color - 1) % 4);
+    if (previous_color == -1) { previous_color = 3; }
     showContent(previous_color);
 }
   
 function getNextContent() {
-    next_color = ((current_color + 1) % 3);
+    next_color = ((current_color + 1) % 4);
     showContent(next_color);
 }
 
@@ -27,7 +27,8 @@ function showContent(color) {
 
   for (num = 0; num < 30; num++) {
     let img = document.createElement("img");
-    img.src = "photos-images/" + path + "/" + num + ".jpeg";
+    img.setAttribute("src", "photos-images/" + path + "/" + num + ".jpeg");
+    img.setAttribute("class", "photo");
     image_container[0].appendChild(img);
   }
 
