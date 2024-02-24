@@ -15,7 +15,8 @@ img {
     display: flex;
     justify-content: center;
     align-items: center;
-    border: 1px solid orange;
+    /* border: 1px solid orange; */
+    margin-top: 215px;
 }
 
 .arrow-button {
