@@ -7,6 +7,7 @@
 
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/mini.css/3.0.1/mini-default.min.css">
     <link rel="stylesheet" href="navbar.css">
+    <link rel="stylesheet" href="timer.css">
 </head>
 <body>
     <header>
@@ -38,32 +39,64 @@
     </div>
     </header>
 
-    <div>Time left = <span id="timer"></span></div>
+    <div class="container">
+        <div class="time-stuff">
+            <div class="timer"><span id="timer"></span></div>
+            <button id="start">Start</button>
+            <button id="stop">Stop</button>
+            <button id="reset">Reset</button>
+        </div>
+        <div>
+            <p>Notes and Tasks:</p>
+            <textarea></textarea>
+        </div>
+    </div>
+
 
     <script>
-        document.getElementById('timer').innerHTML = 5 + ":";
-        startTimer();
+        document.getElementById('timer').innerHTML = 5 + ":" + "00";
+        let startbtn = document.getElementById('start');
+        let stopbtn = document.getElementById('stop');
+        let resetbtn = document.getElementById('reset');
+
+        stopbtn.addEventListener('click', () => { // does not work
+            console.log("hit");
+        });
+
+        startbtn.addEventListener('click', () => {
+            console.log("hit");
+            startTimer();
+        });
+
+        resetbtn.addEventListener('click', () => {
+            document.getElementById('timer').innerHTML = 5 + ":" + "00";
+        });
 
         function startTimer() {
-            var presentTime = document.getElementById('timer').innerHTML;
-            var timeArray = presentTime.split(/[:]+/);
-            var m = timeArray[0];
-            var s = checkSecond((timeArray[1] - 1));
-            if(s == 59) {
-                m=m-1}
-            if(m<0){
-                return
+            let presentTime = document.getElementById('timer').innerHTML;
+            let timeArray = presentTime.split(/[:]+/);
+            let m = timeArray[0];
+            let s = checkSecond((timeArray[1] - 1));
+
+            if (s == 59) {
+                m = m - 1;
             }
-        
-            document.getElementById('timer').innerHTML =m + ":" + s;
-            setTimeout(startTimer, 1000);
-        
+            if (m < 0){
+                return;
+            }
+
+            document.getElementById('timer').innerHTML = m + ":" + s;
+            setTimeout(startTimer, 1000);       
         }
 
         function checkSecond(sec) {
-        if (sec < 10 && sec >= 0) {sec = "0" + sec}; // add zero in front of numbers < 10
-        if (sec < 0) {sec = "59"};
-        return sec;
+            if (sec < 10 && sec >= 0) {
+                sec = "0" + sec;
+            }
+            if (sec < 0) {
+                sec = "59";
+            }
+            return sec;
         }
     </script>
 </body>
