@@ -7,33 +7,16 @@ const holdTime = totalTime / 5
 
 var timer;
 
-// Demo using plain javascript
-var button = document.getElementById("Button");
-var clickBtn = document.getElementsByClassName('click')[0];
+const button = document.querySelector('#button');
 
-// Disable the button on initial page load
-button.disabled = true;
+const disableButton = () => {
+    button.disabled = true;
+};
 
-//add event listener
-clickBtn.addEventListener('click', function(event) {
-    button.disabled = !button.disabled;
-});
+button.addEventListener('click', disableButton);
 
-
-// var stop = false;
-
-function hideButton(x) {
-    x.style.display = 'none';
-}
 
 function breatheAnimation() {
-
-    timer = setInterval(breatheAnimation, totalTime)
-    // stop = false;
-    // if (stop) {
-    //     setInterval(stopAnimation, totalTime)
-    // }
-    // if (!stop) {
 
     text.innerHTML = 'Breathe In'
     container.className = 'container grow'
@@ -46,36 +29,7 @@ function breatheAnimation() {
             container.className = 'container shrink'
         }, holdTime)
     }, breatheTime)
-    
 
-    // }
+    setInterval(breatheAnimation, totalTime)
+
 }
-
-// function stopAnimation() {
-//     clearInterval(timer)
-//     // clearInterval(breatheAnimation, totalTime)
-
-//     // cancelAnimationFrame(timer)
-// //     // stop = true;
-//     // totalTime = 7500
-//     // breatheTime = 100
-//     // holdTime = 100
-//     text.innerHTML = ''
-//     container.className = 'container stop'
-//     setTimeout(() => {
-//         clearInterval(timer)
-//         text.innerText = ''
-//         container.className = 'container stop'
-
-//         setTimeout(() => {
-//             clearInterval(timer)
-//             text.innerText = ''
-//             container.className = 'container stop'
-//         }, holdTime)
-//     }, breatheTime)
-//     // setTimeout(() => {
-//     //     text.innerText = ''
-//     //     container.className = 'container stop'
-//     // }, totalTime)
-//     //timer = setInterval(stopAnimation, totalTime)
-// }

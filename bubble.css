@@ -12,6 +12,12 @@ body {
     background: rgb(229, 235, 249);
 }
 
+#button {
+    border-radius: 15px;
+    width: 150px;
+    background-color: #d4ddf6;
+}
+
 .container {
     display: flex;
     align-items: center;

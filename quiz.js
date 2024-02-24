@@ -69,104 +69,132 @@ const questions = [
     text: "Choose a personality trait:",
     answers: [
       {
-        text: "Loving",
-        image: "https://images.unsplash.com/photo-1465101162946-4377e57745c3?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8OXx8YWVzdGhldGljJTIwZ2FsYXh5fGVufDB8fDB8fHww&auto=format&fit=crop&w=800&q=60",
-        alt: "loving",
-        credit: "Jeremy Thomas"
+        text: "Ambitious",
+        image: "https://images.unsplash.com/photo-1640077362729-37fb5471add0?w=800&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTB8fGFtYml0aW9ufGVufDB8fDB8fHww",
+        alt: "ambitious",
+        credit: "Paolo Margari"
       },
       {
         text: "Beauty / Charm",
-        image: "https://images.unsplash.com/photo-1612694537513-b772cb21f725?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MjZ8fGFlc3RoZXRpYyUyMGdhbGF4eXxlbnwwfHwwfHx8MA%3D%3D&auto=format&fit=crop&w=800&q=60",
-        alt: "beauty / bharm",
-        credit: "Tengyart"
+        image: "https://images.unsplash.com/photo-1522335789203-aabd1fc54bc9?w=800&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTR8fGJlYXV0eXxlbnwwfHwwfHx8MA%3D%3D",
+        alt: "beauty / charm",
+        credit: "Element5 Digital"
       },
       {
-        text: "Ambitious",
-        image: "https://images.unsplash.com/photo-1464802686167-b939a6910659?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8YWVzdGhldGljJTIwZ2FsYXh5fGVufDB8fDB8fHww&auto=format&fit=crop&w=800&q=60",
-        alt: "ambitious",
-        credit: "Jeremy Thomas"
+        text: "Calm",
+        image: "https://images.unsplash.com/photo-1499810631641-541e76d678a2?w=800&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8M3x8Y2FsbXxlbnwwfHwwfHx8MA%3D%3D",
+        alt: "calm",
+        credit: "Ravi Pinisetti"
       },
       {
         text: "Intelligence / Creativity",
-        image: "https://images.unsplash.com/photo-1419242902214-272b3f66ee7a?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTF8fGFlc3RoZXRpYyUyMGdhbGF4eXxlbnwwfHwwfHx8MA%3D%3D&auto=format&fit=crop&w=800&q=60",
+        image: "https://images.unsplash.com/photo-1496096265110-f83ad7f96608?w=800&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTB8fGludGVsbGlnZW5jZXxlbnwwfHwwfHx8MA%3D%3D",
         alt: "intelligence / creativity",
-        credit: "Vincentiu Solomon"
+        credit: "Christopher Burns"
       }
     ]
   },
   /* */
   {
     id: 3,
-    text: "Choose a constellation:",
+    text: "Choose a dessert:",
     answers: [
       {
-        text: "1",
-        image: "https://starregistration.net/media/wysiwyg/Constellations/Cancer.png",
-        alt: "the constellation of Cancer",
-        credit: "Star Registration"
+        text: "Flan",
+        image: "https://images.unsplash.com/photo-1610360147031-26a1d395726e?w=800&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MjN8fGZsYW58ZW58MHx8MHx8fDA%3D",
+        alt: "flan",
+        credit: "Atikah Akhtar"
       },
       {
-        text: "2",
-        image: "https://starregistration.net/media/wysiwyg/Constellations/Leo.png",
-        alt: "the constellation of Leo",
-        credit: "Star Registration"
+        text: "Sugar Cookie",
+        image: "https://images.unsplash.com/photo-1633362218447-b80f27dc2ada?w=800&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8N3x8c3VnYXIlMjBjb29raWV8ZW58MHx8MHx8fDA%3D",
+        alt: "sugar cookie",
+        credit: "Project 290"
       },
       {
-        text: "3",
-        image: "https://theplanets.org/123/2021/01/Gemini-2.png",
-        alt: "the constellation of Gemini",
-        credit: "THEPlanets.Org"
+        text: "Brownie",
+        image: "https://images.unsplash.com/photo-1588539543889-20cc7ce4df55?w=800&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Nnx8YnJvd25pZXxlbnwwfHwwfHx8MA%3D%3D",
+        alt: "brownie",
+        credit: "iMattSmart"
       },
       {
-        text: "4",
-        image: "https://starregistration.net/media/wysiwyg/Constellations/Pisces.png",
-        alt: "the constellation of Pisces",
-        credit: "Star Registration"
+        text: "Cake",
+        image: "https://images.unsplash.com/photo-1566121933407-3c7ccdd26763?w=800&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NTR8fGNha2V8ZW58MHx8MHx8fDA%3D",
+        alt: "cake",
+        credit: "Caitlyn de Wild"
       }
     ]
   },
   /* */
   {
     id: 4,
-    text: "Choose a color:",
+    text: "Choose a supernatural creature:",
     answers: [
       {
-        text: "Blue",
-        image: "",
-        alt: "blue and gray clouds",
-        credit: "Egor Myznik"
+        text: "Fairy",
+        image: "https://t4.ftcdn.net/jpg/06/09/11/27/360_F_609112767_zz1xKYJoobHXUozInc3VFmDZS6Nl1XQO.jpg",
+        alt: "fairy",
+        credit: "Adobe Stock"
       },
       {
-        text: "Yellow/Orange",
-        image: "",
-        alt: "a yellow and orange gradient",
-        credit: "Dave"
+        text: "Phoenix",
+        image: "https://images.unsplash.com/photo-1625082688687-e4b9d610652f?w=800&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NHx8cGhvZW5peCUyMGJpcmR8ZW58MHx8MHx8fDA%3D",
+        alt: "phoenix",
+        credit: "Marek Piwnicki"
       },
       {
-        text: "Brown",
-        image: "",
-        alt: "a brown and orange marble swirl background",
-        credit: "Pawel Czerwinski"
+        text: "Mermaid",
+        image: "https://images.unsplash.com/photo-1471927866530-2b87d315d8b2?w=800&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NHx8bWVybWFpZHxlbnwwfHwwfHx8MA%3D%3D",
+        alt: "mermaid",
+        credit: "Jeremy Bishop"
       },
       {
-        text: "Green",
-        image: "",
-        alt: "a blurry glimmering background of rain drops",
-        credit: "Mike Castro Demaria"
+        text: "Dragon",
+        image: "https://images.unsplash.com/photo-1512522156303-e02eda5e76e7?w=800&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTJ8fGRyYWdvbnxlbnwwfHwwfHx8MA%3D%3D",
+        alt: "dragon",
+        credit: "Mendar Bouchali"
       }
     ]
   }
 ]
 
-const answers = [
+const possibleAnswers = [
     {
-        combination: ["1", "Butterfly", "Loving", "1", "Blue"],
-        text: "Moon",
-        subtext: "You got the Moon! You are dreamy, creative, soft-hearted, and kind. You try to go with the flow and be spontaneous. You feel your feelings and are in tune with your emotions.",
-        image: "https://images.unsplash.com/photo-1459909633680-206dc5c67abb?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1742&q=80",
-        alt: "the moon"
+        text: "Purple",
+        subtext: "Your color aesthetic is purple! Check out the Photo Gallery to view photos and get inspiration related to your color aesthetic!",
+        image: "https://i.pinimg.com/564x/c2/54/73/c254736fe556346938dcaf28666aa44f.jpg",
+        alt: "purple"
+    },
+    {
+        text: "Pink",
+        subtext: "Your color aesthetic is pink! Check out the Photo Gallery to view photos and get inspiration related to your color aesthetic!",
+        image: "https://i.pinimg.com/564x/e1/d2/00/e1d200b65875b572a39d95907e9537f2.jpg",
+        alt: "pink"
+    },
+    {
+        text: "Blue",
+        subtext: "Your color aesthetic is blue! Check out the Photo Gallery to view photos and get inspiration related to your color aesthetic!",
+        image: "https://i.pinimg.com/564x/da/73/aa/da73aa32eda0e65b72645bb76f4ab4fd.jpg",
+        alt: "blue"
+    },
+    {
+        text: "Green",
+        subtext: "Your color aesthetic is green! Check out the Photo Gallery to view photos and get inspiration related to your color aesthetic!",
+        image: "https://i.pinimg.com/564x/4c/95/c1/4c95c1f58511d1576427145c09a8e5b2.jpg",
+        alt: "green"
     }
 ]
+
+const purpleOptions = ["1", "Butterfly", "Ambitious", "Flan", "Fairy"];
+const pinkOptions = ["2", "Dog", "Beauty / Charm", "Sugar Cookie", "Phoenix"];
+const blueOptions = ["3", "Dolphin", "Calm", "Brownie", "Mermaid"];
+const greenOption = ["4", "Turtle", "Intelligence / Creativity", "Cake", "Dragon"];
+
+
+const purple = 0;
+const pink = 0;
+const blue = 0;
+const green = 0;
 
 const unansweredQuestions = []
 const chosenAnswers = []
@@ -217,6 +245,7 @@ const populateQuestions = () => {
 
     })
 }
+
 populateQuestions();
 
 const handleClick = (questionId, chosenAnswer) => {
@@ -243,16 +272,23 @@ const handleClick = (questionId, chosenAnswer) => {
 }
 
 const showAnswer = () => {
-    let result
-    answers.forEach(answer => {
-        if (chosenAnswers.toString() == answer.combination.toString()) {
-            result = answer;
-            return
-            } 
-        else if (!result) {
-            result = answers[51];
+    chosenAnswers.forEach(answer => {
+        if (purpleOptions.includes(answer)) {
+            purple++;
+        } 
+        else if (pinkOptions.includes(answer)) {
+            pink++;
+        }
+        else if (blueOptions.includes(answer)) {
+            blue++;
+        }
+        else {
+            green++;
         }
     })
+
+    let possibilities = [purple, pink, blue, green];
+    let result = possibleAnswers[possibilities.indexOf(Math.max(possibilities))];
 
     const answerBlock = document.createElement('div');
     answerBlock.classList.add('result-block');
