@@ -7,6 +7,19 @@ const holdTime = totalTime / 5
 
 var timer;
 
+// Demo using plain javascript
+var button = document.getElementById("Button");
+var clickBtn = document.getElementsByClassName('click')[0];
+
+// Disable the button on initial page load
+button.disabled = true;
+
+//add event listener
+clickBtn.addEventListener('click', function(event) {
+    button.disabled = !button.disabled;
+});
+
+
 // var stop = false;
 
 function hideButton(x) {
@@ -14,7 +27,7 @@ function hideButton(x) {
 }
 
 function breatheAnimation() {
-    
+
     timer = setInterval(breatheAnimation, totalTime)
     // stop = false;
     // if (stop) {
@@ -22,7 +35,7 @@ function breatheAnimation() {
     // }
     // if (!stop) {
 
-    text.innerHTML = 'Breath In'
+    text.innerHTML = 'Breathe In'
     container.className = 'container grow'
     
     setTimeout(() => {

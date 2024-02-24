@@ -1,27 +1,60 @@
+body {
+  background-image: url('lofi-images/lofi-cafe.jpg');
+  background-size: cover;
+}
+
 button, a {
   margin: auto 0px !important;
   padding: 0px;
 }
 
 .center {
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
-    width: 50%;
-    border-radius: 50px;
-  }
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 50%;
+  border-radius: 50px;
+}
 
-  .musicbar {
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
-    width: 25%;
-  }
+.musicbar {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 25%;
+}
 
-  .swapbutton {
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
-    width: 10%;
-    border-radius: 50px;
-  }
+.swapbutton {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 10%;
+  border-radius: 50px;
+}
+
+.container {
+  display: grid;
+  justify-content: center;
+  text-align: centered;
+  grid-template-rows: 40px 40px;
+  background-color: #d4ddf6;
+  width: 200px;
+  margin-left: 10px;
+  margin-top: 10px;
+  border-radius: 15px;
+}
+
+#myButton {
+  width: 150px;
+  border-radius: 15px;
+  background-color: #a3b9f6;
+}
+
+img {
+  margin-top: 20px;
+  height: 600px;
+  width: 600px;
+}
+
+audio {
+  display: none !important;
+}
