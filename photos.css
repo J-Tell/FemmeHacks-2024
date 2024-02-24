@@ -10,7 +10,7 @@
 .button-container {
     vertical-align: middle;
     align-items: center;
-    border: 1px solid orange;
+    /* border: 1px solid orange; */
 }
 
 .image-container {
@@ -41,5 +41,6 @@ img:hover {
 
 #myDiv{
     position: fixed;
-    /* left: 40px; */
+    left: 0px;
+    /* right: 40px; */
   }
