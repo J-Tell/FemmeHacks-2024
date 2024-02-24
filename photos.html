@@ -43,10 +43,10 @@
 
     <div class = "container">
         <div class = "row">
-            <div class = "col-sm-1 button-container">
-                <button onclick = "getPreviousContent()" >Previous</button>
+            <div id = "myDiv" class = "col-sm-1 button-container">
+                <img onclick = "getPreviousContent()" class="arrow-button" src="blue-pastel-arrow-flipped.png"/>
             </div>
-            <div class = "col-sm-10 image-container">
+            <div class = "image-container">
                 <img src = "photos-images/purple/0.jpeg">
                 <img src = "photos-images/purple/1.jpeg">
                 <img src = "photos-images/purple/2.jpeg">
@@ -78,8 +78,8 @@
                 <img src = "photos-images/purple/28.jpeg">
                 <img src = "photos-images/purple/29.jpeg">
             </div>
-            <div class = "col-sm-1 button-container">
-                <button onclick = "getNextContent()" >Next</button>
+            <div id="myDiv" class = "col-sm-offset-11 button-container">
+                <img  onclick = "getNextContent()" class="arrow-button" src="blue-pastel-arrow.jpg"/>
             </div>
         </div>
     </div>
