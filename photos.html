@@ -5,48 +5,83 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Photo Gallery!</title>
 
-    <link href="photos.css" rel="stylesheet" type="text/css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/mini.css/3.0.1/mini-default.min.css">
+    <link  href="navbar.css" rel="stylesheet" type="text/css">
+
+    <link href="photos.css" rel="stylesheet" type="text/css">
     
 </head>
 <body>
+    <header>
+        <div class = "right_align">
+            <a href="../index.html" class="button">Home</a>
+            <a href="../mission.html" class="button">Mission</a>
+            <div class="study-dropdown">
+                <button class="button" id="dropbtn">Study</button>
+                <div class="study-content">
+                    <a href="lofi.html">Lofi</a>
+                    <a href="timer.html">Timer</a>
+                </div>
+            </div>
+    
+            <div class="calm-dropdown">
+                <button class="button" id="dropbtn">Calm</button>
+                <div class="calm-content">
+                    <a href="bubble.html">Bubble</a>
+                    <a href="quotes.html">Quotes</a>
+                </div>
+            </div>
+    
+            <div class="fun-dropdown">
+                <button class="button" id="dropbtn">Fun</button>
+                <div class="fun-content">
+                    <a href="quiz.html">Quiz</a>
+                    <a href="photos.html">Photos</a>
+                </div>
+            </div>
+    </div>
+    </header>
+
     <div class = "container">
-        <div class = "button-container">
-            <button onclick = "getPreviousContent()" >Previous</button>
-        </div>
-        <div class = "image-container">
-            <img src = "photos-images/purple/0.jpeg">
-            <img src = "photos-images/purple/1.jpeg">
-            <img src = "photos-images/purple/2.jpeg">
-            <img src = "photos-images/purple/3.jpeg">
-            <img src = "photos-images/purple/4.jpeg">
-            <img src = "photos-images/purple/5.jpeg">
-            <img src = "photos-images/purple/6.jpeg">
-            <img src = "photos-images/purple/7.jpeg">
-            <img src = "photos-images/purple/8.jpeg">
-            <img src = "photos-images/purple/9.jpeg">
-            <img src = "photos-images/purple/10.jpeg">
-            <img src = "photos-images/purple/11.jpeg">
-            <img src = "photos-images/purple/12.jpeg">
-            <img src = "photos-images/purple/13.jpeg">
-            <img src = "photos-images/purple/14.jpeg">
-            <img src = "photos-images/purple/15.jpeg">
-            <img src = "photos-images/purple/16.jpeg">
-            <img src = "photos-images/purple/17.jpeg">
-            <img src = "photos-images/purple/18.jpeg">
-            <img src = "photos-images/purple/19.jpeg">
-            <img src = "photos-images/purple/20.jpeg">
-            <img src = "photos-images/purple/21.jpeg">
-            <img src = "photos-images/purple/22.jpeg">
-            <img src = "photos-images/purple/23.jpeg">
-            <img src = "photos-images/purple/24.jpeg">
-            <img src = "photos-images/purple/25.jpeg">
-            <img src = "photos-images/purple/26.jpeg">
-            <img src = "photos-images/purple/27.jpeg">
-            <img src = "photos-images/purple/28.jpeg">
-            <img src = "photos-images/purple/29.jpeg">
-        </div>
-        <div class = "button-container"></div>
-            <button onclick = "getNextContent()" >Next</button>
+        <div class = "row">
+            <div id = "myDiv" class = "col-sm-1 button-container">
+                <img onclick = "getPreviousContent()" class="arrow-button" src="blue-pastel-arrow-flipped.png"/>
+            </div>
+            <div class = "image-container">
+                <img src = "photos-images/purple/0.jpeg">
+                <img src = "photos-images/purple/1.jpeg">
+                <img src = "photos-images/purple/2.jpeg">
+                <img src = "photos-images/purple/3.jpeg">
+                <img src = "photos-images/purple/4.jpeg">
+                <img src = "photos-images/purple/5.jpeg">
+                <img src = "photos-images/purple/6.jpeg">
+                <img src = "photos-images/purple/7.jpeg">
+                <img src = "photos-images/purple/8.jpeg">
+                <img src = "photos-images/purple/9.jpeg">
+                <img src = "photos-images/purple/10.jpeg">
+                <img src = "photos-images/purple/11.jpeg">
+                <img src = "photos-images/purple/12.jpeg">
+                <img src = "photos-images/purple/13.jpeg">
+                <img src = "photos-images/purple/14.jpeg">
+                <img src = "photos-images/purple/15.jpeg">
+                <img src = "photos-images/purple/16.jpeg">
+                <img src = "photos-images/purple/17.jpeg">
+                <img src = "photos-images/purple/18.jpeg">
+                <img src = "photos-images/purple/19.jpeg">
+                <img src = "photos-images/purple/20.jpeg">
+                <img src = "photos-images/purple/21.jpeg">
+                <img src = "photos-images/purple/22.jpeg">
+                <img src = "photos-images/purple/23.jpeg">
+                <img src = "photos-images/purple/24.jpeg">
+                <img src = "photos-images/purple/25.jpeg">
+                <img src = "photos-images/purple/26.jpeg">
+                <img src = "photos-images/purple/27.jpeg">
+                <img src = "photos-images/purple/28.jpeg">
+                <img src = "photos-images/purple/29.jpeg">
+            </div>
+            <div id="myDiv" class = "col-sm-offset-11 button-container">
+                <img  onclick = "getNextContent()" class="arrow-button" src="blue-pastel-arrow.jpg"/>
+            </div>
         </div>
     </div>
 

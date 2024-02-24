@@ -5,15 +5,16 @@ body {
 .container {
     display: flex;
     flex-direction: row;
-    flex-wrap: wrap;
-    width: 98%;
+    width: 96%;
     margin: 0 auto;
-    justify-content: space-around;
+    justify-content: center;
+    padding: 20px;
 }
 
 .button-container {
-    display: flex;
-    flex-direction: column;
+    vertical-align: middle;
+    align-items: center;
+    border: 1px solid orange;
 }
 
 .image-container {
@@ -36,3 +37,13 @@ img:hover {
     transform: scale(1.05);
     filter: drop-shadow(6px 6px 1px #c3c2c5);
 }
+
+.arrow-button {
+    width: 500px;
+    /* transform: translate(0%, 500%); */
+}
+
+#myDiv{
+    position: fixed;
+    /* left: 40px; */
+  }
