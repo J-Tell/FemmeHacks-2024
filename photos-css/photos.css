@@ -1,0 +1,20 @@
+.image-container {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    width: 90%;
+    margin: 0 auto;
+    justify-content: space-around;
+}
+
+img {
+    width: 15%;
+    height: auto;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+img:hover {
+    transform: scale(1.05);
+    filter: drop-shadow(6px 6px 1px #dec6ea);
+}
