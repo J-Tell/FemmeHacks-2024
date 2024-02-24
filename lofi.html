@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="lofi.css">
+    <title>Document</title>
+</head>
+<body>
+    <audio controls autoplay>
+    <source src="lofi-cafe.mp3" type="audio/mpeg">
+    </audio>
+    <button id="myButton">Swipe</button>
+    <img id="myImg" src="lofi-images/lofi-cafe.jpg" class="center">
+    
+    <script>
+        const images = [
+            'lofi-rain.jpg',
+            'lofi-videogame.jpg',
+            'lofi-cafe.jpg'
+        ];
+        const bouton = document.getElementById('myButton');
+        const image = document.getElementById('myImg');
+        let index = 0; 
+        // Instead of using a called function 
+        // I used the new Javascript syntax
+        bouton.addEventListener('click', () => {
+            // you probably will have to adapt the image path 
+            // I used the one that you use on the video
+            image.src='lofi-images/' + images[index];
+            index++;
+            // If you want to restart, set the index to 0
+            // once the array will be passed
+            if (index >= images.length) {
+                index = 0;
+            }
+        });
+    </script>
+</body>
+</html>
