@@ -42,7 +42,21 @@
     </div>
     </header>
 
-    <img src = "quotes/0.png">
+    <div class = "row">
+        <div class = "col-sm-2">
+            <div id = "myDiv" class = "button-container">
+                <img onclick = "getPreviousContent()" class="arrow-button" src="blue-pastel-arrow-flipped.png"/>
+            </div>
+        </div>
+        <div class = "col-sm-8 quote">
+            <img src = "quotes/0.png">
+        </div>
+        <div class = "col-sm-2">
+            <div id="myDiv" class = "button-container">
+                <img  onclick = "getNextContent()" class="arrow-button" src="blue-pastel-arrow.jpg"/>
+            </div>
+        </div>
+    </div>
 
     <script src = "quotes.js"></script>
 </body>

@@ -1,14 +1,17 @@
+// (define (modadd low high current addnum)
+//   ( + (modulo (+ (- current low) addnum) (+ (- high low) 1)) low))
+
 var current_quote = 0;
 
 function getPreviousContent() {
-    previous_color = ((current_color - 1) % 3);
-    if (previous_color == -1) { previous_color = 2; }
-    showContent(previous_color);
+    previous_quote = ((current_quote - 1) % 12);
+    if (previous_quote == -1) { previous_quote = 11; }
+    showContent(previous_quote);
 }
   
 function getNextContent() {
-    next_color = ((current_color + 1) % 3);
-    showContent(next_color);
+    next_quote = ((current_quote + 1) % 12);
+    showContent(next_quote);
 }
 
 function clearContent(container) {
@@ -17,18 +20,14 @@ function clearContent(container) {
       }
 }
 
-function showContent(color) {
-  var image_container = document.querySelectorAll('.image-container');
+function showContent(quote) {
+  var quote_container = document.querySelectorAll('.quote');
 
-  clearContent(image_container[0]);
+  clearContent(quote_container[0]);
+  
+  let img = document.createElement("img");
+  img.src = "quotes/" + quote + ".png";
+  quote_container[0].appendChild(img);
 
-  var path = colors[color];
-
-  for (num = 0; num < 30; num++) {
-    let img = document.createElement("img");
-    img.src = "photos-images/" + path + "/" + num + ".jpeg";
-    image_container[0].appendChild(img);
-  }
-
-  current_color = color;
+  current_quote = quote;
 }
