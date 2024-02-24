@@ -6,6 +6,7 @@
     <title>Timer</title>
 
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/mini.css/3.0.1/mini-default.min.css">
+    <script src="https://kit.fontawesome.com/6be594bf2d.js" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="navbar.css">
     <link rel="stylesheet" href="timer.css">
 </head>
@@ -40,22 +41,79 @@
     </div>
     </header>
 
-    <div class="container">
+    <div class="everything">
+        <section>
+            <div class="container">
+                <h1>Pomodoro</h1>
+    
+                <div class="painel">
+                    <p id="work">work</p>
+                    <p id="break">break</p>
+                </div>
+    
+                <div class="timer">
+                    <div class="circle">
+                        <div class="time">
+                            <p id="minutes"></p>
+                            <p>:</p>
+                            <p id="seconds"></p>
+                        </div>
+                    </div>
+                </div>
+    
+                <div class="controls">
+                    <button id="start" onclick="start()"><i class="fa-solid fa-play"></i></button>
+    
+                    <a id="reset" href="timer.html"><i class="fa-solid fa-arrow-rotate-left"></i></a>
+                </div>
+            </div>
+        </section>
+        <div>
+            <p id="notes">Notes and Tasks:</p>
+            <textarea></textarea>
+        </div>
+    </div>
+    
+
+    <script src="timer.js"></script>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <!-- <div class="container">
         <div class="time-stuff">
             <div class="timer"><span id="timer"></span></div>
             <button id="start">Start</button>
             <button id="stop">Stop</button>
             <button id="reset">Reset</button>
         </div>
-        <div>
-            <p>Notes and Tasks:</p>
-            <textarea></textarea>
-        </div>
+        
     </div>
 
 
     <script>
-        document.getElementById('timer').innerHTML = 5 + ":" + "00";
+        document.getElementById('timer').innerHTML = 1 + ":" + "00";
         let startbtn = document.getElementById('start');
         let stopbtn = document.getElementById('stop');
         let resetbtn = document.getElementById('reset');
@@ -65,7 +123,6 @@
         });
 
         startbtn.addEventListener('click', () => {
-            console.log("hit");
             startTimer();
         });
 
@@ -99,6 +156,6 @@
             }
             return sec;
         }
-    </script>
+    </script> -->
 </body>
 </html>
