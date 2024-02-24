@@ -22,7 +22,7 @@ function breatheAnimation() {
     // }
     // if (!stop) {
 
-    text.innerHTML = 'Breath In'
+    text.innerHTML = 'Breathe In'
     container.className = 'container grow'
     
     setTimeout(() => {

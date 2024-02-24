@@ -1,12 +1,8 @@
-body {
-    background: rgb(229, 235, 249);
-}
-
 :root {
     --header-back-color: #d4ddf6;
     --header-hover-back-color: #d4ddf6;
-    --header-border-color: #8c8a8d;
-    --header-fore-color: #000000;
+    --header-border-color: #d4ddf6;
+    --header-fore-color: #7089cc;
 }
 
 header {
@@ -57,7 +53,7 @@ header {
 
 .calm-content a, .study-content a, .fun-content a {
     float: none;
-    color: black;
+    color: #7089cc;
     padding: 12px 16px;
     text-decoration: none;
     display: block;
