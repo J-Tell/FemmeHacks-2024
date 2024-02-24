@@ -161,25 +161,25 @@ const questions = [
 const possibleAnswers = [
     {
         text: "Purple",
-        subtext: "Your color aesthetic is purple! Check out the Photo Gallery to view photos and get inspiration related to your color aesthetic!",
+        subtext: "Your color aesthetic is purple! You are independent and pave your own path forward. You enjoy the finer things in life and always work hard to achieve your dreams. Check out the Photo Gallery to view photos and get inspiration related to your color aesthetic!",
         image: "https://i.pinimg.com/564x/c2/54/73/c254736fe556346938dcaf28666aa44f.jpg",
         alt: "purple"
     },
     {
         text: "Pink",
-        subtext: "Your color aesthetic is pink! Check out the Photo Gallery to view photos and get inspiration related to your color aesthetic!",
+        subtext: "Your color aesthetic is pink! You are made of sugar, spice, and everything nice. You are compassionate, sweet, and a good friend to those around you. Check out the Photo Gallery to view photos and get inspiration related to your color aesthetic!",
         image: "https://i.pinimg.com/564x/e1/d2/00/e1d200b65875b572a39d95907e9537f2.jpg",
         alt: "pink"
     },
     {
         text: "Blue",
-        subtext: "Your color aesthetic is blue! Check out the Photo Gallery to view photos and get inspiration related to your color aesthetic!",
+        subtext: "Your color aesthetic is blue! You are calm, cool, and collected. You inspire serenity and peace to those around you, and you are a reliable friend. Check out the Photo Gallery to view photos and get inspiration related to your color aesthetic!",
         image: "https://i.pinimg.com/564x/da/73/aa/da73aa32eda0e65b72645bb76f4ab4fd.jpg",
         alt: "blue"
     },
     {
         text: "Green",
-        subtext: "Your color aesthetic is green! Check out the Photo Gallery to view photos and get inspiration related to your color aesthetic!",
+        subtext: "Your color aesthetic is green! You are the perfect mix of innovation and imagination You see the beauty in everything around you, and you aspire to make a difference in the world. Check out the Photo Gallery to view photos and get inspiration related to your color aesthetic!",
         image: "https://i.pinimg.com/564x/4c/95/c1/4c95c1f58511d1576427145c09a8e5b2.jpg",
         alt: "green"
     }
