@@ -43,9 +43,10 @@
 
 
     
-    <button onclick="change_text()" id="myButton" class="swapbutton">Choose a picture!</button>
-    <img id="myImg" src="lofi-images/lofi-cafe.jpg" class="center">
-    <p id="myTitle">Now Playing: Aurora </p>
+    <div class="container">
+        <p id="myTitle">Now Playing: Aurora </p>
+        <button onclick="change_text()" id="myButton" class="swapbutton">Choose a picture!</button>
+    </div>
     <audio id="mySong" controls autoplay loop class="musicbar">
         <source src="lofi-music/lofi-cafe-aurora.mp3" type="audio/mpeg">
     </audio>
@@ -77,7 +78,8 @@
         }
 
         bouton.addEventListener('click', () => {
-            image.src='lofi-images/' + images[index];
+            document.body.style.backgroundImage = 'url(lofi-images/' + images[index] + ")";
+            // image.src='lofi-images/' + images[index];
             //title.src = title[index];
             song.src='lofi-music/' + music[index];
             //bouton.textContent = title[index];
