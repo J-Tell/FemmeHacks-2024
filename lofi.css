@@ -55,3 +55,7 @@ img {
 audio {
   display: none !important;
 }
+
+#myTitle {
+  color: #7089cc;
+}
