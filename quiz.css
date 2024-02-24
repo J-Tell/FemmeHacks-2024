@@ -82,20 +82,22 @@ p {
 
 .result {
   font-size: 18px;
-  font-family: CrystalUniverse, 'Pacifico', cursive;
+  font-family: "Shantell Sans", cursive;
+  color: white;
   letter-spacing: 2px;
 }
 
 .result-desc {
   font-size: 18px;
-  font-family: 'IBM Plex Mono', monospace;
+  color: white;
+  font-family: "Shantell Sans", cursive;
 }
 
 .result-block {
   width: 850px;
-  background-color: #FF1D8E;
+  background-color: #b3c5f3;
   border-radius: 5px;
-  border: solid #FF1D8E 20px;
+  border: solid #b3c5f3 20px;
 }
 
 .result-block img {
