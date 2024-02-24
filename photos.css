@@ -1,3 +1,17 @@
+.container {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    width: 98%;
+    margin: 0 auto;
+    justify-content: space-around;
+}
+
+.button-container {
+    display: flex;
+    flex-direction: column;
+}
+
 .image-container {
     display: flex;
     flex-direction: row;
@@ -16,5 +30,5 @@ img {
 
 img:hover {
     transform: scale(1.05);
-    filter: drop-shadow(6px 6px 1px #dec6ea);
+    filter: drop-shadow(6px 6px 1px #c3c2c5);
 }
