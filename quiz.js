@@ -191,10 +191,10 @@ const blueOptions = ["3", "Dolphin", "Calm", "Brownie", "Mermaid"];
 const greenOption = ["4", "Turtle", "Intelligence / Creativity", "Cake", "Dragon"];
 
 
-const purple = 0;
-const pink = 0;
-const blue = 0;
-const green = 0;
+var purple = 0;
+var pink = 0;
+var blue = 0;
+var green = 0;
 
 const unansweredQuestions = []
 const chosenAnswers = []
@@ -257,9 +257,6 @@ const handleClick = (questionId, chosenAnswer) => {
     if (itemToRemove > -1) {
       unansweredQuestions.splice(itemToRemove, 1);
     }
-  
-    console.log(chosenAnswers);
-    console.log(unansweredQuestions);
 
     disableQuestionBlock(questionId, chosenAnswer);
     const lowestQuestionId = Math.min(...unansweredQuestions);
@@ -287,8 +284,12 @@ const showAnswer = () => {
         }
     })
 
+    Array.prototype.max = function() {
+        return Math.max.apply(null, this);
+    }
+
     let possibilities = [purple, pink, blue, green];
-    let result = possibleAnswers[possibilities.indexOf(Math.max(possibilities))];
+    let result = possibleAnswers[possibilities.indexOf(possibilities.max())];
 
     const answerBlock = document.createElement('div');
     answerBlock.classList.add('result-block');
