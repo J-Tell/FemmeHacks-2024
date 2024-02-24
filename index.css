@@ -1,10 +1,11 @@
 body {
-    background: rgb(229, 235, 249);
+    background-image: url('background.png');
+    background-size: cover;
 }
 
 h1, h2 {
     text-align: center; 
-    color: #7089cc;
+    color: white;
     font-family: "Shantell Sans", cursive;
 }
 
