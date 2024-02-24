@@ -10,6 +10,7 @@ header {
 }
 
 .button {
+    font-family: "Shantell Sans", cursive;
     font-size: 20px;
 }
 
@@ -29,7 +30,7 @@ header {
 }
 
 
-.calm-dropdown .dropbtn, .study-dropdown .dropbtn, .fun-dropdown .dropbtn{
+.calm-dropdown .dropbtn, .study-dropdown .dropbtn, .fun-dropdown .dropbtn {
     font-size: 30px !important;
     border: none;
     outline: none;
@@ -52,6 +53,7 @@ header {
 
 
 .calm-content a, .study-content a, .fun-content a {
+    font-family: "Shantell Sans", cursive;
     float: none;
     color: #7089cc;
     padding: 12px 16px;
@@ -68,4 +70,17 @@ header {
 
 .calm-dropdown:hover .calm-content, .study-dropdown:hover .study-content, .fun-dropdown:hover .fun-content {
     display: block;
+}
+
+#lotus {
+    justify-content: left;
+    width: 60px;
+    height: 40px;
+    margin-left: 8px;
+    margin-top: 5px;
+}
+
+.whole-bar {
+    display: grid;
+    grid-template-columns: 100px 1000px;
 }
