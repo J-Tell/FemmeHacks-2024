@@ -74,6 +74,31 @@ body {
     /* grid-template-columns: 100px 100px; */
 }
 
+#start {
+    font-family: "Shantell Sans", cursive;
+    font-size: 20px;
+    border-radius: 15px;
+    width: 150px;
+    background-color: #d4ddf6;
+}
+
+/* .pointer-container {
+    position: absolute;
+    top: -40px;
+    left: 140px;
+    width: 20px;
+    height: 190px;
+    animation: rotate 7.5s linear forwards;
+    transform-origin: bottom center;
+}
+
+.pointer {
+    background-color: #fff;
+    border-radius: 50%;
+    height: 20px;
+    width: 20px;
+    display: block;
+} */
 
 .container.grow {
     animation: grow 3.5s linear forwards;

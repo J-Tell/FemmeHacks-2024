@@ -19,10 +19,11 @@ body {
 }
 
 .swapbutton {
+  font-family: "Shantell Sans", cursive;
   display: block;
   margin-left: auto;
   margin-right: auto;
-  width: 10%;
+  width: 175px !important;
   height: 40px;
   border-radius: 50px;
 }
@@ -46,16 +47,11 @@ body {
   background-color: #a3b9f6;
 }
 
-img {
-  margin-top: 20px;
-  height: 600px;
-  width: 600px;
-}
-
 audio {
   display: none !important;
 }
 
 #myTitle {
   color: #7089cc;
+  font-family: "Shantell Sans", cursive;
 }
