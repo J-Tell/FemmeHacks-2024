@@ -7,8 +7,8 @@
     <title>Document</title>
 </head>
 <body>
-    <audio controls autoplay>
-    <source src="lofi-cafe.mp3" type="audio/mpeg">
+    <audio id="mySong" controls autoplay loop>
+        <source src="lofi-music/lofi-cafe-aurora.mp3" type="audio/mpeg">
     </audio>
     <button id="myButton">Swipe</button>
     <img id="myImg" src="lofi-images/lofi-cafe.jpg" class="center">
@@ -19,8 +19,14 @@
             'lofi-videogame.jpg',
             'lofi-cafe.jpg'
         ];
+        const music = [
+            'lofi-rain-wondering.mp3',
+            'lofi-videogame-floating.mp3',
+            'lofi-cafe-aurora.mp3'
+        ]
         const bouton = document.getElementById('myButton');
         const image = document.getElementById('myImg');
+        const song = document.getElementById('mySong');
         let index = 0; 
         // Instead of using a called function 
         // I used the new Javascript syntax
@@ -28,10 +34,11 @@
             // you probably will have to adapt the image path 
             // I used the one that you use on the video
             image.src='lofi-images/' + images[index];
+            song.src='lofi-music/' + music[index];
             index++;
             // If you want to restart, set the index to 0
             // once the array will be passed
-            if (index >= images.length) {
+            if (index >= images.length && index >= music.length) {
                 index = 0;
             }
         });
