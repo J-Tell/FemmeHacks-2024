@@ -1,3 +1,8 @@
+body {
+  background: rgb(229, 235, 249);
+  font-family: "Shantell Sans", cursive;
+}
+
 .quiz {
   display: flex;
   justify-content: center;
@@ -11,23 +16,24 @@ section {
 }
 
 h1 {
-  font-family: CrystalUniverse, 'Pacifico', cursive;
-  color: #450d70;
-  filter: drop-shadow(0 0 0.8rem  #4e1877);
-  font-size: 1.8rem;
+  font-family: "Shantell Sans", cursive;
+  color: #7089cc;
+  font-size: 3rem;
   line-height: 1.6;
   text-align: left;
   padding-bottom: 20px;
-  padding-left: 22px;
 }
 
 h2 {
-  font-family: CrystalUniverse, 'Pacifico', cursive;
+  margin-top: 35px;
+  font-family: "Shantell Sans", cursive;
+  font-size: 2rem;
   letter-spacing: 2px;
 }
 
 p {
-  color: #360a57;
+  font-family: "Shantell Sans", cursive;
+  color: #7089cc;
   font-size: 1.125rem;
   line-height: 1.5;
   padding-bottom: 20px;
@@ -36,7 +42,7 @@ p {
 .title-block {
   width: 900px;
   height: 100px;
-  background-color: #FF1D8E;
+  background-color: #b3c5f3;
   border-radius: 5px;
   display: flex;
   justify-content: center;

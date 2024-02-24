@@ -3,11 +3,13 @@ body {
 }
 
 h1 {
+    font-family: "Shantell Sans", cursive;
     color: #7089cc;
     margin-top: 60px;
     margin-left: 60px;
 }
 
 p {
+    font-family: "Shantell Sans", cursive;
     margin-left: 60px;
 }
