@@ -4,8 +4,52 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Bubble</title>
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/mini.css/3.0.1/mini-default.min.css">
+    <link rel="stylesheet" href="bubble.css">
+    <link rel="stylesheet" href="navbar.css">
 </head>
 <body>
+    <header>
+        <div class = "right_align">
+            <a href="../index.html" class="button">Home</a>
+            <div class="study-dropdown">
+                <button class="button" id="dropbtn">Study</button>
+                <div class="study-content">
+                    <a href="lofi.html">Lofi</a>
+                    <a href="timer.html">Timer</a>
+                </div>
+            </div>
+    
+            <div class="calm-dropdown">
+                <button class="button" id="dropbtn">Calm</button>
+                <div class="calm-content">
+                    <a href="bubble.html">Bubble</a>
+                    <a href="quotes.html">Quotes</a>
+                </div>
+            </div>
+    
+            <div class="fun-dropdown">
+                <button class="button" id="dropbtn">Fun</button>
+                <div class="fun-content">
+                    <a href="quiz.html">Quiz</a>
+                    <a href="photo.html">Photos</a>
+                </div>
+            </div>
+    </div>
+    </header>
+
+    <!-- <h1>Bubble</h1> -->
+    <div class="container">
+        <div class="circle"></div>
+        <p id="text"></p>
+        <div class="pointer-container">
+            <div class="pointer"></div>
+        </div>
+        <div class="gradient-circle"></div>
+    </div>
+
+    <script src="bubble.js"></script>
     
 </body>
 </html>
