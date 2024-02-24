@@ -3,11 +3,6 @@ body {
   background-size: cover;
 }
 
-button, a {
-  margin: auto 0px !important;
-  padding: 0px;
-}
-
 .center {
   display: block;
   margin-left: auto;
@@ -28,6 +23,7 @@ button, a {
   margin-left: auto;
   margin-right: auto;
   width: 10%;
+  height: 40px;
   border-radius: 50px;
 }
 
@@ -38,6 +34,7 @@ button, a {
   grid-template-rows: 40px 40px;
   background-color: #d4ddf6;
   width: 200px;
+  height: 100px;
   margin-left: 10px;
   margin-top: 10px;
   border-radius: 15px;
@@ -57,4 +54,8 @@ img {
 
 audio {
   display: none !important;
+}
+
+#myTitle {
+  color: #7089cc;
 }
