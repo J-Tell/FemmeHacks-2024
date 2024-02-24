@@ -69,6 +69,8 @@ body {
 }
 
 #start {
+    font-family: "Shantell Sans", cursive;
+    font-size: 20px;
     border-radius: 15px;
     width: 150px;
     background-color: #d4ddf6;
