@@ -23,7 +23,20 @@ img {
     margin-top: 215px;
 }
 
-.arrow-button {
+.right {
+    margin-left: 25px;;
+}
+
+.left {
+    margin-left: 25px;
+}
+
+/* .arrow-button {
     width: 500px;
     /* transform: translate(0%, 500%); */
+
+
+#myDiv{
+    left: 0px;
+    width: 100%;
 }
