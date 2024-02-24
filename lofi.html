@@ -3,15 +3,51 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lofi Music</title>
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/mini.css/3.0.1/mini-default.min.css">
     <link rel="stylesheet" href="lofi.css">
-    <title>Document</title>
+    <link rel="stylesheet" href="index.css">
+    <link rel="stylesheet" href="navbar.css">
 </head>
 <body>
-    <audio id="mySong" controls autoplay loop>
+    <header>
+        <div class = "right_align">
+            <a href="../index.html" class="button">Home</a>
+            <div class="study-dropdown">
+                <button class="button" id="dropbtn">Study</button>
+                <div class="study-content">
+                    <a href="lofi.html">Lofi</a>
+                    <a href="timer.html">Timer</a>
+                </div>
+            </div>
+    
+            <div class="calm-dropdown">
+                <button class="button" id="dropbtn">Calm</button>
+                <div class="calm-content">
+                    <a href="bubble.html">Bubble</a>
+                    <a href="quotes.html">Quotes</a>
+                </div>
+            </div>
+    
+            <div class="fun-dropdown">
+                <button class="button" id="dropbtn">Fun</button>
+                <div class="fun-content">
+                    <a href="quiz.html">Quiz</a>
+                    <a href="photo.html">Photos</a>
+                </div>
+            </div>
+    </div>
+    </header>
+
+
+    
+    <button onclick="change_text()" id="myButton" class="swapbutton">Choose a picture!</button>
+    <img id="myImg" src="lofi-images/lofi-cafe.jpg" class="center">
+    <p id="myTitle">Now Playing: Aurora </p>
+    <audio id="mySong" controls autoplay loop class="musicbar">
         <source src="lofi-music/lofi-cafe-aurora.mp3" type="audio/mpeg">
     </audio>
-    <button id="myButton">Swipe</button>
-    <img id="myImg" src="lofi-images/lofi-cafe.jpg" class="center">
     
     <script>
         const images = [
@@ -24,24 +60,42 @@
             'lofi-videogame-floating.mp3',
             'lofi-cafe-aurora.mp3'
         ]
+        const songTitles = [
+            'Now Playing: Wondering',
+            'Now Playing: Floating',
+            'Now Playing: Aurora'
+        ]
         const bouton = document.getElementById('myButton');
         const image = document.getElementById('myImg');
         const song = document.getElementById('mySong');
+        //const title = document.getElementById('myTitle');
         let index = 0; 
-        // Instead of using a called function 
-        // I used the new Javascript syntax
+
+        function change_text()
+        {
+            if (index == 0) {
+                document.getElementById("myTitle").innerHTML = "Now Playing: Wondering";
+            }
+            else if (index == 1) {
+                document.getElementById("myTitle").innerHTML = "Now Playing: Floating";
+            }
+            else if (index == 2) {
+                document.getElementById("myTitle").innerHTML = "Now Playing: Aurora";
+            }
+        }
+
         bouton.addEventListener('click', () => {
-            // you probably will have to adapt the image path 
-            // I used the one that you use on the video
             image.src='lofi-images/' + images[index];
+            //title.src = title[index];
             song.src='lofi-music/' + music[index];
+            //bouton.textContent = title[index];
             index++;
-            // If you want to restart, set the index to 0
-            // once the array will be passed
+
             if (index >= images.length && index >= music.length) {
                 index = 0;
             }
         });
+
     </script>
 </body>
 </html>

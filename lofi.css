@@ -1,11 +1,22 @@
-body {
-    background-color: blueviolet;
-}
-
 .center {
     display: block;
     margin-left: auto;
     margin-right: auto;
     width: 50%;
+    border-radius: 50px;
+  }
+
+  .musicbar {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 25%;
+  }
+
+  .swapbutton {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 10%;
     border-radius: 50px;
   }
