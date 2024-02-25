@@ -26,6 +26,10 @@ Quotes Credit:
 
 https://www.canva.com/ -- Canva
 
-Photo Gallery Credit:
+Home Page & Photo Gallery Credit:
 
 https://www.pinterest.com/ -- Pinterest
+
+Color Quiz Credits:
+
+https://unsplash.com/ -- Unsplash
