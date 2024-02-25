@@ -1,7 +1,7 @@
 let workTag = document.getElementById('work');
 let breakTag = document.getElementById('break');
 
-let workTime = 25;
+let workTime = 1;
 let breakTime = 5;
 let seconds = "00"
 
@@ -31,6 +31,8 @@ function start() {
         if (seconds === 0) {
             workMinutes = workMinutes - 1;
             if (workMinutes === -1 ) {
+                let audio = new Audio('alarm.mp3');
+                audio.play();
                 if (breakCount % 2 === 0) {
                     workMinutes = breakMinutes;
                     breakCount++
