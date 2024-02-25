@@ -167,4 +167,14 @@ section {
 
 .notes-header {
     display: flex;
+    border: 1px solid orange;
+}
+
+.vertical-center {
+    margin: 0;
+    position: absolute;
+    top: 21%;
+    left: 76.8%;
+    -ms-transform: translateY(-50%);
+    transform: translateY(-50%);
 }
