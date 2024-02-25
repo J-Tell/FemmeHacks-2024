@@ -29,3 +29,11 @@ https://www.canva.com/ -- Canva
 Photo Gallery Credit:
 
 https://www.pinterest.com/ -- Pinterest
+
+Timer Sound Effect:
+
+https://www.youtube.com/watch?v=SbSTkCPpaOQ -- Youtube
+
+Home Screen Background :
+
+https://www.pinterest.com/pin/281543719701031/ -- Pinterest
