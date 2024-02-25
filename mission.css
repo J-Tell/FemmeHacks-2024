@@ -16,3 +16,11 @@ p {
     margin-bottom: 30px;
     color: #79a2e0;
 }
+
+.mission-image {
+    display: block;
+    width: 15%;
+    height: auto;
+    margin: auto;
+    padding-top: 20px;
+}
