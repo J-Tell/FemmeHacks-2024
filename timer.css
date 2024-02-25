@@ -166,15 +166,23 @@ section {
 }
 
 .notes-header {
-    display: flex;
-    border: 1px solid orange;
+   display: grid;
+   grid-template-columns: 250px 50px;
+}
+
+#save {
+    justify-content: center;
+    font-family: "Shantell Sans", cursive;
+    width: 60px;
+    border-radius: 15px;
+    background-color: #a3b9f6;
 }
 
 .vertical-center {
     margin: 0;
     position: absolute;
-    top: 21%;
-    left: 76.8%;
+    top: 19%;
+    left: 72%;
     -ms-transform: translateY(-50%);
     transform: translateY(-50%);
 }

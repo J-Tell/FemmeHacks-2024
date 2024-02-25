@@ -1,7 +1,7 @@
 let workTag = document.getElementById('work');
 let breakTag = document.getElementById('break');
 
-let workTime = 1;
+let workTime = 25;
 let breakTime = 5;
 let seconds = "00"
 
