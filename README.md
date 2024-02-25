@@ -26,7 +26,7 @@ Quotes Credit:
 
 https://www.canva.com/ -- Canva
 
-Photo Gallery Credit:
+Home Page & Photo Gallery Credit:
 
 https://www.pinterest.com/ -- Pinterest
 
@@ -37,3 +37,6 @@ https://www.youtube.com/watch?v=SbSTkCPpaOQ -- Youtube
 Home Screen Background :
 
 https://www.pinterest.com/pin/281543719701031/ -- Pinterest
+Color Quiz Credits:
+
+https://unsplash.com/ -- Unsplash
